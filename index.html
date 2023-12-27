@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5b6b2de25.js" crossorigin="anonymous"></script>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;1,9..40,300;1,9..40,400&family=Oswald&family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<body> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;1,9..40,300;1,9..40,400&family=Oswald&family=Poppins:ital,wght@1,400;1,500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo5.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cybersecurity Student</p>
+                <h1>Hi, I'm <span>Uzma Haneef</span> <br> From Pakistan</h1>
+            </div>
+        </div>
+        
+        <!-- .....About....... -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/aboutme2.avif">
+                        </div>
+                        <div class="about-col-2"><h1 class="subtitle">About Me</h1>
+                            <p>Greetings! I am a passionate and driven Cybersecurity student at NED University of Engineering and Technology With a keen interest in securing digital landscapes, I am dedicated to enhancing my skills and contributing to the ever-evolving world of cybersecurity.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            </div>
+                            <div class="tab-contents" id="Experience">
+                                <ul>
+                                    <li><span>Develop Gym website</span><br>Gained hands-on experience with technologies such as HTML, CSS. </li>
+                                    <li><span>Develop portfolio website </span><br>Gained hands-on experience with technologies such as HTML, CSS, and JavaScript.</li>
+                                    <li><span>App Development</span><br>Building andriod/ios development</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents active-tab "id="skills">
+                                <ul>
+                                    <li><span>Networking</span><br>Theoritical comand on Networking</li>
+                                    <li><span>Web Development</span><br>Web app development</li>
+                                    <li><span>C/C++</span><br>Basic computer languages learned from university</li>
+                                    <li><span>Object Oriented programming</span><br>Learned from University in C++ language</li>
+                                    <li><span>Data Structure and algorithms</span><br>Learned from University</li>
+                                    <li><span>Python</span><br>Learned from online</li>
+                                    <li><span>HTML/CSS/Javescript</span><br>Learned from online</li>
+                                    <li><span>Node js and MongoDb</span><br>Learned from online</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="Education">
+                                <ul>
+                                    <li><span>Matric</span><br>Year: 2008 to 2020<br>Place: Marvi Grammar K.G School Mithi district Tharparker</li>
+                                    <li><span>Intermidiate</span><br>Year: 2020 to 2022<br>Place: Goverenment Girls Degree college Mithi district Tharparker</li>
+                                    <li><span>University</span><br>Year: 2022 to 2026<br>Place: NED university of Engineering and Technology</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <!-- .............Services.............. -->
+            <div id="services">
+                <div class="container">
+                   <h1 class="subtitle">My Services</h1>
+                   <div class="services-list">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>I acquired proficiency in frontend development through online courses, significantly augmenting my development skills encompassing HTML, CSS, and JavaScript. For my initial project, I designed a Gym website utilizing HTML and CSS. Following this, I undertook the development of a personal portfolio website, further refining my practical expertise in web development.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h2>Programming</h2>
+                        <p>
+                            In my first semester at university, I acquired proficiency in programming languages C and C++. Subsequently, during my second semester, I delved into Object-Oriented Programming (OOP) with a focus on the C++ language. By the conclusion of the semester, I successfully developed a Snake game project, showcasing my application of Object-Oriented Programming principles.Currently, in my third semester, I am engaged in the study of Data Structures and Algorithms (DSA).
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h2>Cybersecurity </h2>
+                        <p>While my university education did not initially cover cybersecurity, I have proactively sought knowledge in this field through online courses. In the "Introduction to Cybersecurity" course, I gained foundational knowledge about the essence of cybersecurity. The second course, "Managing Security Risks," provided insights into the various risks and vulnerabilities encountered by cybersecurity analysts. Additionally, the "Network Security" course delved into the crucial aspect of networking in the realm of cybersecurity. Lastly, I undertook a course on Kali Linux, a pivotal tool for cybersecurity analysts
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            <!-- ..........Portfolio........... -->
+            <div id="Projects">
+                <div class="container">
+                    <h1 class="subtitle">My Projects</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/work1.jpg" >
+                            <div class="layer">
+
+                                <h3>Tic-tac-toe</h3>
+                                    <p>In my first semester at university, I created a Tic-Tac-Toe game employing fundamental concepts of the C programming language.</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work2.jpg" >
+                            <div class="layer">
+
+                                <h3>Snake game</h3>
+                                <p>During my second semester at university, I developed a Snake game project utilizing Object-Oriented Programming principles.
+                                </p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/work4.jpg" >
+                            <div class="layer">
+                                <h3>Gym website</h3>
+                                <p>During my leisure time, I developed a gym website.</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See more</a>
+                </div>
+            </div>
+            <!-- ......................Contact ...............-->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="contact-left">
+                            <h1 class="sub-tittle">Contact me</h1>
+                            <p><i class="fa-solid fa-envelope"></i>uzma.haneef2004@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>03313880803</p>
+                            <!-- <div class="social-icons"> -->
+                              <!-- ... (existing code) ... -->
+                                <div class="social-icons">
+                                    <!-- LinkedIn -->
+                                    <a href="https://www.linkedin.com//in/uzma-haneef-a90879270" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+
+                                    <!-- Instagram -->
+                                    <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+<!-- ... (existing code) ... -->
+  
+                            
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet" >
+                                <input type="text", name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName('tab-links');
+        var tabcontents= document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tablink of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = '0';
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzoU8lGJFtaVE_h5EYN1Tb1PM1jSwu-1DUSc-BMvcnCbWUAS0EVEQijpZq3nfrXLucvfQ/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg=document.getElementById("msg");
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
+            .then(response => {
+                msg.innerHTML = "Messege sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+    </script>
+
+    
+</body>
+</html>
